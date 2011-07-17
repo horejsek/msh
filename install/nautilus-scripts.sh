@@ -5,6 +5,8 @@
 # https://github.com/horejsek/msh
 #
 
+NAUTILUS_SCRIPTS_DIR=~/.gnome2/nautilus-scripts
+
 dir=`dirname $BASH_SOURCE`
 cd $dir
 
@@ -17,7 +19,8 @@ git clone git://github.com/horejsek/nautilus-scripts.git
 
 IFS=$'\n'
 
-cp `find nautilus-scripts/ -type f | grep -v ".git"` ~/.gnome2/nautilus-scripts
+cp `find nautilus-scripts/ -type f | grep -v ".git"` $NAUTILUS_SCRIPTS_DIR
+chmod 777 $NAUTILUS_SCRIPTS_DIR/*
 
 cd ..
 
