@@ -5,6 +5,13 @@
 # https://github.com/horejsek/msh
 #
 
+ROOT_UID=0
+
+if [ ! "$UID" -eq "$ROOT_UID" ]; then
+	echo "You must be root!"
+	exit 1
+fi
+
 dir=`dirname $BASH_SOURCE`
 cd $dir
 
