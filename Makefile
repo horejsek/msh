@@ -21,7 +21,7 @@ update-bashrc:
 	. $(MSH_BASHRC)
 
 packages:
-	apt-get install `cat install/packages`
+	install/packages.sh
 
 github-repos:
 	install/github-repos.sh
