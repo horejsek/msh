@@ -25,6 +25,8 @@ improve-bashrc:
 	if [ 0 -eq `cat $(BASHRC) | grep "$(MSH_BASHRC)" | wc -l` ]; then \
 		echo ". $(MSH_BASHRC)" >> $(BASHRC); \
 	fi;
+	
+	chmod 777 $(MSH_BASHRC_DIR) -R
 
 install-packages:
 	install/packages.sh
