@@ -5,10 +5,7 @@
 # https://github.com/horejsek/msh
 #
 
-dir=`dirname $BASH_SOURCE`
-
-. $dir/commands.sh
-. $dir/less.sh
-. $dir/alias.sh
-. $dir/ssh.sh
+alias gitup='git pull origin'
+alias gk='gitk'
+alias gg='gitg'
 
