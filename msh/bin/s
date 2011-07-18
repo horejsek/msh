@@ -10,7 +10,7 @@ import os
 import dialog
 
 try:
-    from colorBash.colorBash import ColoredText
+    from colorbash import ColoredText
 except:
     class ColoredText(str):
         def setColor(self, color): pass
