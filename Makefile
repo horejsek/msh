@@ -6,18 +6,18 @@ BASHRC=~/.bashrc
 
 all:
 	@echo "make use-all - do all stuff"
-	@echo "make improve-bashrc - improve bashrc"
+	@echo "make install-msh - improve bashrc"
 	@echo "make install-packages - install packages"
 	@echo "make install-github-repos - install Michal's repos on GitHub"
 	@echo "make install-nautilus-scripts - install Michal's Nautilus scripts"
 
 use-all: \
-	improve-bashrc \
+	install-msh \
 	install-packages \
 	install-github-repos \
 	install-nautilus-scripts
 
-improve-bashrc:
+install-msh:
 	rm -rf $(MSH_DIR)
 	mkdir $(MSH_DIR)
 	cp -r msh/* $(MSH_DIR)
