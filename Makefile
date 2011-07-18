@@ -20,7 +20,7 @@ use-all: \
 improve-bashrc:
 	rm -rf $(MSH_DIR)
 	mkdir $(MSH_DIR)
-	cp msh/* $(MSH_DIR)
+	cp -r msh/* $(MSH_DIR)
 	
 	if [ 0 -eq `cat $(BASHRC) | grep "$(MSH_BASHRC)" | wc -l` ]; then \
 		echo ". $(MSH_BASHRC)" >> $(BASHRC); \
