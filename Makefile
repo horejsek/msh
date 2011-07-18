@@ -1,5 +1,5 @@
 
-MSH_BASHRC_DIR=~/.msh/
+MSH_DIR=~/.msh/
 MSH_BASHRC=$(MSH_BASHRC_DIR)bashrc.sh
 
 BASHRC=~/.bashrc
@@ -18,15 +18,15 @@ use-all: \
 	install-nautilus-scripts
 
 improve-bashrc:
-	rm -rf $(MSH_BASHRC_DIR)
-	mkdir $(MSH_BASHRC_DIR)
-	cp bashrc/* $(MSH_BASHRC_DIR)
+	rm -rf $(MSH_DIR)
+	mkdir $(MSH_DIR)
+	cp msh/* $(MSH_DIR)
 	
 	if [ 0 -eq `cat $(BASHRC) | grep "$(MSH_BASHRC)" | wc -l` ]; then \
 		echo ". $(MSH_BASHRC)" >> $(BASHRC); \
 	fi;
 	
-	chmod 777 $(MSH_BASHRC_DIR) -R
+	chmod 777 $(MSH_DIR) -R
 
 install-packages:
 	install/packages.sh
