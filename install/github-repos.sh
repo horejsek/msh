@@ -29,6 +29,7 @@ done
 for repo in `ls -1 .`; do
 	cd $repo
 	python setup.py install
+	python3 setup.py install
 	cd ..
 done
 
