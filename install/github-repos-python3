@@ -1,0 +1,5 @@
+git://github.com/horejsek/sqlpuzzle.git -b python3k 
+git://github.com/horejsek/colorbash.git
+git://github.com/horejsek/textformatter.git
+git://github.com/horejsek/checkvat.git
+git://github.com/horejsek/translator.git
