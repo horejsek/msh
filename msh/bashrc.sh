@@ -9,6 +9,8 @@ MSH_BIN=~/.msh/bin
 
 export PATH=$PATH:$MSH_BIN
 
+export PS1="[\u@\h \[\e[1;34m\]\W\[\e[0m\]]\$ "
+
 
 dir=`dirname $BASH_SOURCE`
 
