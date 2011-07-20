@@ -26,3 +26,8 @@ un () {
     fi
 }
 
+dir2scp () {
+    echo `whoami`@`hostname`:`pwd`
+}
+
+
