@@ -5,11 +5,19 @@
 # https://github.com/horejsek/msh
 #
 
-MSH_BIN=~/.msh/bin
+ROOT_UID=0
 
+PROMPT_COLOR='1;34m'
+if [ ${UID} -eq ${ROOT_UID} ]; then
+	PROMPT_COLOR='1;31m'
+fi
+
+export PS1="[\u@\h \[\e[${PROMPT_COLOR}\]\W\[\e[0m\]]\$ "
+
+
+MSH_BIN=~/.msh/bin
 export PATH=$PATH:$MSH_BIN
 
-export PS1="[\u@\h \[\e[1;34m\]\W\[\e[0m\]]\$ "
 
 
 dir=`dirname $BASH_SOURCE`
