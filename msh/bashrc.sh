@@ -14,6 +14,7 @@ fi
 
 export PS1="[\u@\h \[\e[${PROMPT_COLOR}\]\W\[\e[0m\]]\$ "
 
+export HISTTIMEFORMAT="%d/%m/%y %T "
 
 MSH_BIN=~/.msh/bin
 export PATH=$PATH:$MSH_BIN
