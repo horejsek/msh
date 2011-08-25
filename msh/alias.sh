@@ -5,7 +5,8 @@
 # https://github.com/horejsek/msh
 #
 
+alias bp='bpython'
 alias gitup='git pull origin'
-alias gk='gitk'
 alias gg='gitg'
+alias gk='gitk'
 
