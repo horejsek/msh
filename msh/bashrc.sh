@@ -27,5 +27,6 @@ dir=`dirname $BASH_SOURCE`
 . $dir/less.sh
 . $dir/alias.sh
 . $dir/ssh.sh
+. $dir/git.sh
 
 
