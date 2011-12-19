@@ -13,6 +13,8 @@ chromium-browser
 mc
 pidgin
 python-dialog
+python-setuptools
+python-pip
 python3
 smplayer
 subversion
