@@ -30,4 +30,13 @@ dir2scp () {
     echo `whoami`@`hostname`:`pwd`
 }
 
+up () {
+    if [ -d .git ]; then
+        git pull origin
+    elif [ -d .svn ]; then
+        svn up
+    else
+        echo "up: Nothing to update."
+    fi
+}
 
