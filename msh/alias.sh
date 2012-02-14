@@ -10,3 +10,5 @@ alias gitup='git pull origin'
 alias gg='gitg'
 alias gk='gitk'
 
+alias ack-grep='ack-grep --color'
+
