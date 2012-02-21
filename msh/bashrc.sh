@@ -29,4 +29,5 @@ dir=`dirname $BASH_SOURCE`
 . $dir/ssh.sh
 . $dir/git.sh
 
+HISTSIZE=1000000
 
