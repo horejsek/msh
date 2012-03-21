@@ -19,6 +19,8 @@ export HISTTIMEFORMAT="%d/%m/%y %T "
 MSH_BIN=~/.msh/bin
 export PATH=$PATH:$MSH_BIN
 
+export PYTHONSTARTUP=~/.msh/startup.py
+
 
 
 dir=`dirname $BASH_SOURCE`
