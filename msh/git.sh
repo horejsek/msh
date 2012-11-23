@@ -5,5 +5,11 @@
 # https://github.com/horejsek/msh
 #
 
-git config --global alias.prettylog 'log --pretty=format:"%h %s" --graph'
+git config --global color.diff auto
+git config --global color.status auto
+git config --global color.branch auto
+git config --global color.interactive auto
+git config --global color.ui auto
+
+git config --global alias.prettylog 'log --pretty=format:"%Cgreen%h%Creset %s" --graph'
 
