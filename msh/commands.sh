@@ -32,7 +32,7 @@ dir2scp () {
 
 up () {
     if [ -d .git ]; then
-        git pull origin
+        git pull
     elif [ -d .svn ]; then
         svn up
     else
