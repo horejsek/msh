@@ -5,6 +5,10 @@
 # https://github.com/horejsek/msh
 #
 
+getgitbranch() {
+    git branch 2> /dev/null | grep "^\*" | cut -c3-
+}
+
 un () {
     if [ -f $1 ]; then
         case $1 in
