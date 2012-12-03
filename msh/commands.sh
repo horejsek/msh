@@ -9,6 +9,11 @@ getgitbranch() {
     git branch 2> /dev/null | grep "^\*" | cut -c3-
 }
 
+isgitclean() {
+    test "" = "$(git status -s 2> /dev/null)"
+    return $?
+}
+
 un () {
     if [ -f $1 ]; then
         case $1 in
