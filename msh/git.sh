@@ -14,4 +14,5 @@ git config --global color.ui auto
 git config --global push.default current
 
 git config --global alias.l 'log --pretty=format:"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset" --graph --date=short'
+git config --global alias.ll 'log --pretty=format:"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset" --graph --date=short --all'
 
