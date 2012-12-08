@@ -16,14 +16,14 @@ all:
 	@echo "make install-msh - improve bashrc"
 	@echo "make install-msh-root - improve bashrc for root"
 	@echo "make install-packages - install packages"
-	@echo "make install-github-repos - install Michal's repos on GitHub"
+	@echo "make install-python-packages - install python packages"
 	@echo "make install-nautilus-scripts - install Michal's Nautilus scripts"
 
 use-all: \
 	install-msh \
 	install-msh-root \
 	install-packages \
-	install-github-repos \
+	install-python-packages \
 	install-nautilus-scripts
 
 install-msh:
@@ -51,8 +51,8 @@ install-msh-root:
 install-packages:
 	install/packages.sh
 
-install-github-repos:
-	install/github-repos.sh
+install-python-packages:
+	install/python-packages.sh
 
 install-nautilus-scripts:
 	install/nautilus-scripts.sh
