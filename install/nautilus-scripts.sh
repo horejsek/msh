@@ -15,7 +15,7 @@ if [ -e tmp ]; then
 fi
 mkdir tmp && cd tmp
 
-git clone git://github.com/horejsek/nautilus-scripts.git
+git clone https://github.com/horejsek/nautilus-scripts.git
 
 IFS=$'\n'
 
