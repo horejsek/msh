@@ -23,16 +23,18 @@ prompt_command() {
     GIT_COLOR='\[\e[0;35m\]'
     PROMPT_COLOR='\[\e[1;34m\]'
     COLOR_RESET='\[\e[0m\]'
+    PROMPT='$'
     
     if ! isgitclean; then
         GIT_COLOR='\[\e[1;35m\]'
     fi
     if [ ${UID} -eq ${ROOT_UID} ]; then
-	    USER_COLOR='1;31m'
-        COLOR='1;31m'
+	    USER_COLOR='\[\e[1;31m\]'
+        PROMPT_COLOR='\[\e[1;31m\]'
+        PROMPT='#'
     fi
 
-    export PS1="[${USER_COLOR}\u@\h${COLOR_RESET}] \t ${HISTORY_COLOR}\! ${DIR_COLOR}\w\n${GIT_COLOR}$(getgitbranch)${PROMPT_COLOR}\$${COLOR_RESET} "
+    export PS1="[${USER_COLOR}\u@\h${COLOR_RESET}] \t ${HISTORY_COLOR}\! ${DIR_COLOR}\w\n${GIT_COLOR}$(getgitbranch)${PROMPT_COLOR}${PROMPT}${COLOR_RESET} "
 }
 export PROMPT_COMMAND=prompt_command
 
