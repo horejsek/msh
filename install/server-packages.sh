@@ -12,5 +12,5 @@ if [ ! "$UID" -eq "$ROOT_UID" ]; then
 	exit 1
 fi
 
-apt-get install `cat install/packages-server`
+apt-get install `cat install/server-packages`
 
