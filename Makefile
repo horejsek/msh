@@ -54,6 +54,9 @@ install-packages:
 install-python-packages:
 	install/python-packages.sh
 
+install-server-packages:
+	install/python-packages.sh
+
 install-nautilus-scripts:
 	install/nautilus-scripts.sh
 
