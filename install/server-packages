@@ -13,5 +13,6 @@ python-pip
 python3
 subversion
 tig
+tmux
 vim
 
