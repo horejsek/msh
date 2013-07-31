@@ -1,0 +1,28 @@
+
+set encoding=utf-8
+setglobal fileencoding=utf-8
+set termencoding=utf-8
+set fileencodings=utf-8,iso-8859-15
+
+syntax on
+colorscheme jellybeans
+
+set shell=bash
+set undolevels=1000
+
+set noerrorbells
+set visualbell
+
+set showmatch
+set ignorecase
+set incsearch
+
+set number
+set ruler
+
+set tabstop=4
+set shiftwidth=4
+set smartindent
+set autoindent
+set expandtab
+
