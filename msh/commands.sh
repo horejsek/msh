@@ -53,3 +53,7 @@ generatepassword () {
     dd if=/dev/random bs=16 count=1 2>/dev/null | base64 | sed 's/=//g'
 }
 
+portforwarding () {
+    ssh -L 8080:localhost:$2 $1
+}
+
