@@ -14,3 +14,5 @@ fi
 
 apt-get install `cat install/packages`
 
+(cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install)
+
