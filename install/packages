@@ -8,6 +8,7 @@ gimp
 git
 gitg
 gitk
+git-gui
 gnome-mplayer
 guake
 htop
@@ -25,3 +26,4 @@ tig
 tmux
 transmission
 vim
+woof
