@@ -1,38 +1,21 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-#
-# msh (Michal's Shell)
-# Michal Horejsek <horejsekmichal@gmail.com>
-# https://github.com/horejsek/msh
-#
 
 import os
 import dialog
 
-try:
-    from colorbash import ColoredText
-except:
-    class ColoredText(str):
-        def setColor(self, color): pass
 
-
-machines = [
+MACHINES = [
     'root@machine',
 ]
+CHOICES = [(str(i), machine) for i, machine in enumerate(MACHINES)]
+
 
 d = dialog.Dialog()
-
-choices = [(str(i), machine) for i, machine in enumerate(machines)]
-
-selectedMachine = d.menu("Choose machine", height=20, menu_height=20, width=100, choices=choices)
+selected_machine = d.menu("Choose machine", height=20, menu_height=20, width=100, choices=CHOICES)
 
 os.system('clear')
-if selectedMachine[0] == 0:
-    cmd = 'ssh %s' % machines[int(selectedMachine[1])]
-    
-    info = ColoredText(cmd)
-    info.setColor('red' if 'root@' in cmd else 'green')
-    print info
-    
+if selected_machine[0] == 0:
+    cmd = 'ssh %{}'.format(MACHINES[int(selected_machine[1])])
+    print(cmd)
     os.system(cmd)
-

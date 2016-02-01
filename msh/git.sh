@@ -1,9 +1,4 @@
 #!/bin/bash
-#
-# msh (Michal's Shell)
-# Michal Horejsek <horejsekmichal@gmail.com>
-# https://github.com/horejsek/msh
-#
 
 git config --global color.diff auto
 git config --global color.status auto
@@ -15,4 +10,3 @@ git config --global push.default current
 
 git config --global alias.l 'log --pretty=format:"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset" --graph --date=short'
 git config --global alias.ll 'log --pretty=format:"%Cgreen%h%Creset %ad %C(cyan)%an%Creset - %s%C(red)%d%Creset" --graph --date=short --all'
-

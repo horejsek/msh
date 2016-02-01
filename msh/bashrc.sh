@@ -1,16 +1,9 @@
 #!/bin/bash
-#
-# msh (Michal's Shell)
-# Michal Horejsek <horejsekmichal@gmail.com>
-# https://github.com/horejsek/msh
-#
 
 dir=`dirname $BASH_SOURCE`
 
-. $dir/commands.sh
-. $dir/less.sh
 . $dir/alias.sh
-. $dir/ssh.sh
+. $dir/commands.sh
 . $dir/git.sh
 
 
@@ -24,7 +17,7 @@ prompt_command() {
     PROMPT_COLOR='\[\e[1;34m\]'
     COLOR_RESET='\[\e[0m\]'
     PROMPT='$'
-    
+
     if ! isgitclean; then
         GIT_COLOR='\[\e[1;35m\]'
     fi
@@ -38,12 +31,16 @@ prompt_command() {
 }
 export PROMPT_COMMAND=prompt_command
 
+
 export HISTTIMEFORMAT="%d/%m/%y %T "
+export HISTSIZE=1000000
+
 
 MSH_BIN=~/.msh/bin
 export PATH=$PATH:$MSH_BIN
 
+
 export PYTHONSTARTUP=~/.msh/startup.py
 
-HISTSIZE=1000000
 
+eval "$(thefuck --alias)"

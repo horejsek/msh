@@ -1,9 +1,4 @@
 #!/bin/bash
-#
-# msh (Michal's Shell)
-# Michal Horejsek <horejsekmichal@gmail.com>
-# https://github.com/horejsek/msh
-#
 
 getgitbranch() {
     git branch 2> /dev/null | grep "^\*" | cut -c3-
@@ -37,20 +32,6 @@ un () {
 
 dir2scp () {
     echo `whoami`@`hostname`:`pwd`
-}
-
-up () {
-    if [ -d .git ]; then
-        git pull
-    elif [ -d .svn ]; then
-        svn up
-    else
-        echo "up: Nothing to update."
-    fi
-}
-
-generatepassword () {
-    dd if=/dev/random bs=16 count=1 2>/dev/null | base64 | sed 's/=//g'
 }
 
 portforwarding () {

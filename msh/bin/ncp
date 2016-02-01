@@ -1,4 +1,4 @@
-#! /usr/bin/bash
+#!/usr/bin/bash
 # http://intermediatesql.com/linux/scrap-the-scp-how-to-copy-data-fast-using-pigz-and-nc/
 
 FILE_FULL=$1
