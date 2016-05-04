@@ -25,3 +25,9 @@ set shiftwidth=4
 set smartindent
 set autoindent
 set expandtab
+
+set mouse=a
+set ttymouse=xterm2
+
+set history=10000
+set undolevels=10000
