@@ -29,4 +29,4 @@ install-fuck:
 	cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install
 
 install-packages:
-	apt-get install htop vim git tig colordiff bpyhton python-dialog
+	apt-get install make htop vim git tig colordiff bpython python python-dev python-pip python-dialog ruby
