@@ -42,3 +42,5 @@ alias ports='netstat -tulanp'
 alias bp='bpython'
 
 alias prettyjson='python -m json.tool'
+
+alias webserver='python -m http.server'
