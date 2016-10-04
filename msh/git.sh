@@ -20,6 +20,10 @@ git config --global alias.uncommit 'reset --soft HEAD~1'
 git config --global alias.unstage 'reset -q HEAD --'
 git config --global alias.discard 'checkout --'
 
+git config --global alias.please 'push --force-with-lease'
+git config --global alias.it '!git init && git commit -m “root” --allow-empty'
+git config --global alias.merc 'merge --no-ff'
+
 # https://github.com/schreifels/git-num
 alias gn="git num"
 alias ga="git num add"
