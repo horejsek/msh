@@ -39,6 +39,9 @@ alias somepwd='cat /dev/urandom | tr -dc "a-zA-Z0-9" | fold -w 32 | head -n 1'
 # What is running on ports?
 alias ports='netstat -tulanp'
 
+# What non-kernel processes are running?
+alias processes='ps --ppid 2 -p 2 -p 1 --deselect -o uid,pid,rss,%cpu,command, --sort -rss,-cpu'
+
 alias bp='bpython'
 
 alias prettyjson='python -m json.tool'
