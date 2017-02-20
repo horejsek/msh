@@ -15,7 +15,7 @@ git config --global alias.branches 'branch -a'
 git config --global alias.tags 'tag'
 git config --global alias.stashes 'stash list'
 
-git config --global alias.amend 'commit --amend'
+git config --global alias.commend 'commit --amend --no-edit'
 git config --global alias.uncommit 'reset --soft HEAD~1'
 git config --global alias.unstage 'reset -q HEAD --'
 git config --global alias.discard 'checkout --'
