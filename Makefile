@@ -27,9 +27,5 @@ install-vim:
 	mkdir -p ~/.vim/colors
 	cp msh/vim/jellybeans.vim ~/.vim/colors
 
-install-fuck:
-	sudo pip3 install thefuck
-	cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install
-
 install-packages:
 	apt-get install bash-completion make htop vim aptitude git tig colordiff tmux
