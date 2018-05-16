@@ -41,6 +41,3 @@ export PATH=$PATH:$MSH_BIN
 
 
 export PYTHONSTARTUP=~/.msh/startup.py
-
-
-eval "$(thefuck --alias)"

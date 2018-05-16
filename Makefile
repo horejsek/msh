@@ -31,10 +31,5 @@ install-fuck:
 	sudo pip3 install thefuck
 	cd /tmp && git clone --depth 1 https://github.com/visionmedia/git-extras.git && cd git-extras && sudo make install
 
-install-packages: install-packages-build install-packages-system install-packages-dev
-install-packages-build:
-	apt-get install build-essential devscripts lintian make
-install-packages-system:
-	apt-get install ack-grep htop vim aptitude colordiff
-install-packages-dev:
-	apt-get install git tig bpython python3 python3-dev python3-pip ruby
+install-packages:
+	apt-get install bash-completion make htop vim aptitude git tig colordiff tmux
