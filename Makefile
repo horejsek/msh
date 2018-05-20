@@ -5,7 +5,7 @@ MSH_BASHRC=$(MSH_DIR)bashrc.sh
 BASHRC=~/.bashrc
 
 
-install: install-msh install-git install-vim
+install: install-msh install-git install-vim install-tmux
 
 install-msh:
 	rm -rf $(MSH_DIR)
@@ -20,12 +20,15 @@ install-msh:
 	chmod 777 $(MSH_DIR) -R
 
 install-git:
-	cp msh/gitconfig ~/.gitconfig
+	cp gitconfig ~/.gitconfig
 
 install-vim:
-	cp msh/vim/vimrc ~/.vimrc
+	cp vim/vimrc ~/.vimrc
 	mkdir -p ~/.vim/colors
-	cp msh/vim/jellybeans.vim ~/.vim/colors
+	cp vim/jellybeans.vim ~/.vim/colors
+
+install-tmux:
+	cp tmux.conf ~/.tmux.conf
 
 install-packages:
-	apt-get install bash-completion make htop vim aptitude git tig colordiff tmux
+	apt-get install bash-completion make htop vim aptitude git tig colordiff tmux mc
