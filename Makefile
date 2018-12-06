@@ -31,4 +31,4 @@ install-tmux:
 	cp tmux.conf ~/.tmux.conf
 
 install-packages:
-	apt-get install bash-completion make htop vim aptitude git tig colordiff tmux mc
+	apt-get install bash-completion make curl htop aptitude vim git tig colordiff tmux mc
