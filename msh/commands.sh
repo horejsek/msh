@@ -38,3 +38,6 @@ portforwarding () {
     ssh -L 8080:localhost:$2 $1
 }
 
+fixtmuxssh() {
+    eval $(tmux show-env -s | grep '^SSH_')
+}
